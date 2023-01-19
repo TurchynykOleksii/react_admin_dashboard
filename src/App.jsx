@@ -8,11 +8,11 @@ import Contacts from './layouts/Contacts/Contacts';
 import Invoices from './layouts/Invoices/Invoices';
 import Form from './layouts/Form/Form';
 import FAQ from './layouts/FAQ/FAQ';
+import Calendar from './layouts/Calendar/Calendar';
 // import Bar from './layouts/Bar/Bar';
 // import Line from './layouts/Line/Line';
 // import Pie from './layouts/Pie/Pie';
 // import Geography from './layouts/Geography/Geography';
-// import Calendar from './layouts/Calendar/Calendar';
 import NavBar from './layouts/global/NavBar';
 
 export const App = () => {
@@ -33,11 +33,11 @@ export const App = () => {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/calendar" element={<Calendar />} />
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/line" element={<Line />} /> */}
               {/* <Route path="/pie" element={<Pie />} /> */}
               {/* <Route path="/geography" element={<Geography />} /> */}
-              {/* <Route path="/calendar" element={<Calendar />} /> */}
             </Routes>
           </main>
         </div>
