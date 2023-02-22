@@ -106,12 +106,12 @@ const NavBar = () => {
                   variant="h2"
                   color={colors.grey[100]}
                   fontWeight="bold"
-                  sx={{ m: '10px 0 0 0' }}
+                  sx={{ m: '10px 0 0 0', p: '0 10px' }}
                 >
-                  Ed Roh
+                  Turchynyk Oleksii
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  Admin
                 </Typography>
               </Box>
             </Box>

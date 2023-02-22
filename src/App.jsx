@@ -9,11 +9,11 @@ import Invoices from './layouts/Invoices/Invoices';
 import Form from './layouts/Form/Form';
 import FAQ from './layouts/FAQ/FAQ';
 import Calendar from './layouts/Calendar/Calendar';
-// import Bar from './layouts/Bar/Bar';
-// import Line from './layouts/Line/Line';
-// import Pie from './layouts/Pie/Pie';
-// import Geography from './layouts/Geography/Geography';
+import Bar from './layouts/Bar/Bar';
+import Pie from './layouts/Pie/Pie';
 import NavBar from './layouts/global/NavBar';
+import Line from './layouts/Line/Line';
+import Geography from './layouts/Geography/Geography';
 
 export const App = () => {
   const [theme, colorMode] = useMode();
@@ -23,7 +23,6 @@ export const App = () => {
         <CssBaseline />
         <div className="app">
           <NavBar />
-
           <main className="content">
             <Topbar />
             <Routes>
@@ -34,10 +33,10 @@ export const App = () => {
               <Route path="/form" element={<Form />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/calendar" element={<Calendar />} />
-              {/* <Route path="/bar" element={<Bar />} /> */}
-              {/* <Route path="/line" element={<Line />} /> */}
-              {/* <Route path="/pie" element={<Pie />} /> */}
-              {/* <Route path="/geography" element={<Geography />} /> */}
+              <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
+              <Route path="/line" element={<Line />} />
+              <Route path="/geography" element={<Geography />} />
             </Routes>
           </main>
         </div>
