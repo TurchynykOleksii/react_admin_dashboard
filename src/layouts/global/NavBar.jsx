@@ -5,6 +5,7 @@ import { Box, IconButton, Typography, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { tokens } from '../../theme';
 import User from '../../images/user.png';
+import Admin from '../../images/admin.png';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
@@ -92,13 +93,20 @@ const NavBar = () => {
 
           {!isCollapsed && (
             <Box mb="25px">
-              <Box display="flex" justifyContent="center" alignItems="center">
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                width="100px"
+                height="100px"
+                sx={{ borderRadius: '50%', overflow: 'hidden', m: '0 auto' }}
+              >
                 <img
                   alt="profile-user"
-                  width="100px"
-                  height="100px"
-                  style={{ cursor: 'pointer', borderRadius: '50%' }}
-                  src={User}
+                  style={{
+                    cursor: 'pointer',
+                  }}
+                  src={Admin}
                 />
               </Box>
               <Box textAlign="center">
