@@ -26,6 +26,7 @@ export const App = () => {
           <main className="content">
             <Topbar />
             <Routes>
+              asdasda
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
